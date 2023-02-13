@@ -124,4 +124,18 @@
 // console.log(typeof obj);
 // console.log(typeof arr);
 
+// let undef = undefined;
+// console.log(undef);
+// console.log(typeof undef)
+//
+// let nan = NaN;
+// console.log(nan);
+// console.log(typeof nan);
+//
+// let nul = null;
+// console.log(nul);
+// console.log(typeof nul);
 
+undefined
+let a;
+console.log(a);
