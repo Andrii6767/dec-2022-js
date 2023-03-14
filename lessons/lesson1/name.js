@@ -1,3 +1,4 @@
+
 // console.log(33); //вивід інформації у консоль розробника
 // document.write('hello'); // вивід інформації у браузерне вікно
 // let strText='Hello';// type string 'hello' "hello" `hello`
@@ -136,6 +137,193 @@
 // console.log(nul);
 // console.log(typeof nul);
 
-undefined
-let a;
-console.log(a);
+// undefined
+// let a;
+// console.log(a);
+
+// let names='vasya, petya, olga, anna';
+      //     0         1        2       3     4    5          6
+       //                                                0  1  2
+// let names=['vasya', 'petya', 'olga', 'anna', 123, true, [12,[111,222,333], 13,14] ];
+// console.log(names);
+// console.log(names[0]);
+// console.log(names[2]);
+// let innerArrayOFNambers=names[6];
+// console.log(innerArrayOFNambers[1]);
+// console.log(names[6] [2])
+// console.log(typeof 111);
+// console.log(typeof true);
+// console.log(typeof 'anna');
+//
+// console.log(names[1],names[2]);
+
+// names[2]='TOLYA';
+// console.log(names);
+// names[7]='foo ';
+// console.log(names)
+// names[8]='afdsgdfg ';
+// names[9]='fsjfjds';
+// names[10]='sdfhtr ';
+
+// names[names.length]= 'foo'; // щоб бути динамічнішим пишемо це names.length
+// names[names.length]= 'bar';
+// names[names.length]= 'foobar';
+// console.log(names);
+
+// console.log(typeof 111);
+// console.log(typeof names);
+// console.log(Array.isArray(names));  //true, false  ця команда скаже точно чи обєкт чи ні
+
+// let user1Name='kokos';
+// let user1age=23;//
+// let user1status=true;// але це можна написати динамічніше
+// let user={
+//     username:'kokos',
+//     age:23,
+//     status:true,
+//     skills:['java','js','html'],
+//     wife:{
+//         username: 'anna',
+//         age: 21
+//     }
+// };
+// console.log(user);
+// console.log(user.wife.username);
+// console.log(user.username);
+// console.log(user['wife']["username"]);
+
+// console.log(user.username);
+// console.log(user.age);
+// console.log(user.status);
+// console.log(user.skills[2]); //це перший спосіб як можна звертатися до ключів;
+
+// console.log(user['username']);
+// console.log(user['age']);
+// console.log(user['status']);
+// console.log(user['skills'][2]);
+
+// let skills = [
+//     {title:'java',exp:3},
+//     {title:'js',exp: 4},
+//     {title:'html',exp: 12}
+// ];
+// console.log(skills);
+// let user={
+//     username:'kokos',
+//     age:23,
+//     status:true,
+//     skills:[
+//         {title:'java',exp:3},
+//         {title:'js',exp: 4},
+//         {title:'html',exp: 12}
+//     ],
+//     wife:{
+//         username: 'anna',
+//         age: 21
+//     }
+// };
+// console.log(user.skills[2].exp); //хочемо вивести exp:12;
+// // user.nickname='kamikadze';//
+// user['nickname']='kamikadze';// два способи додати характеристику;
+//
+// console.log(user);
+//
+// user.car={
+//     manufactirer:'porcshe',
+//     year: 2014,
+//     generation:2,
+//     power:300,
+//
+// };
+// console.log(user);
+
+// const s =prompt('dkjfkdl'); // як витягти дані з модельного вікна
+// console.log()
+
+// let x=0;
+// let y=x;
+// y=y+1;
+// console.log(x,y);
+// let obj={
+//     foo:0
+// }
+// let obj2=obj;
+// obj2.foo=100500;
+// console.log(obj2);
+// console.log(obj);
+// console.log(obj===obj2);
+
+// const obj ={
+//     name:'vasya'
+// }
+// obj.age=123;
+// const obj2=obj;
+// console.log(obj2);
+// if (true){ // покаже іфку.
+//     console.log('++++');
+// }else{
+//     console.log('----');
+// }
+// if (false){ //покаже елсз
+//     console.log('++++');
+// }else{
+//     console.log('----');
+// }
+//
+// let color='red'; //будуть ++++, якщо у летці буде щось інше то будуть ----
+// if (color==='black'){
+//     console.log('++++');
+// }else{
+//     console.log('----');
+// }
+
+//це застосовуюють у сайтах де потрібно підтвердити чи є тобі 18+
+// const answer=confirm('are you older than 18?');
+// console.log(answer);
+// if (answer){
+//     document.write('<h1> hello and watch your hot movies</h1>')
+// }else {
+//     document.write('<h1> hello and watch your cartoons </h1>')
+// }
+
+//для світлофора
+// let color='green'
+// let isroadClean=true;
+// if (color==='green' || isroadClean) {
+//     console.log('go')
+// }else if (color==='yellow'){
+//     console.log('wait')
+// }else if (color==='red'){
+//     console.log('stop')
+// }else {
+//     console.log('????')
+// }
+// if (color==='green' || isroadClean) {
+//     console.log('go')
+// } if (color==='yellow'){
+//     console.log('wait')
+// } if (color==='red'){
+//     console.log('stop')
+// } {
+//     console.log('????')
+// }
+// true&&false->false;
+// true&&true->true;
+// false&&true->false;
+// false&&false->false
+
+// true||false->true;
+// true||true->true;
+// false||true->true;
+// false||false->false
+
+// switch ('foo'){
+//     case 'foo':
+//         console.log('dsfksjlkf');
+//         break;
+//     case 'bar':
+//         console.log(sdkfjsklf);
+//         break;
+//     default:
+//         console.log('as;kjfsak');
+// }
